@@ -1,3 +1,7 @@
+/**
+ * Thanks to https://codepen.io/mburakerman/pen/zrNYwZ for them
+ * responsive nav bar concept
+ */
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -44,9 +48,35 @@ nav {
   text-decoration: none;
   color: #616161; /* grey darken-2 */
   font-weight: bold;
+  transition: all 0.3s ease-out;
+}
+.hamburger {
+  align-self: center;
+  cursor: pointer;
+  display: none;
+  height: 7vmax;
+  margin-right: 4vmin;
+  width: 6vmax;
+  /* transition: all 0.3s ease-in; */
+}
+.hamburger .span {
+  background: #616161; /* grey darken-2 */
+  border-radius: 2px;
+  height: 7px;
+  margin: 5px auto;
+  backface-visibility: hidden;
 }
 main {
   padding: 1vmin;
+}
+@media (max-width: 650px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+    /* transition: all 0.3s ease-in;     */
+  }
 }
 @media (min-width: 992px) {
   body {
