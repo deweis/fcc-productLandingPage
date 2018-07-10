@@ -60,17 +60,41 @@ nav {
   /* transition: all 0.3s ease-in; */
 }
 .hamburger .span {
+  backface-visibility: hidden;
   background: #616161; /* grey darken-2 */
   border-radius: 2px;
   height: 7px;
   margin: 5px auto;
-  backface-visibility: hidden;
+}
+.nav-toggled {
+  background: #eeeeee; /* grey lighten-3 */
+  bottom: 0;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.nav-toggled .nav-links {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+}
+.nav-toggled .nav-links li {
+  font-size:calc(2em + 5vmin);
+  line-height: 25vmin;
+  width: 100%;
 }
 main {
   padding: 1vmin;
 }
 @media (max-width: 650px) {
-  .nav-links {
+  nav .nav-links {
     display: none;
   }
   .hamburger {
