@@ -57,6 +57,7 @@ nav {
   height: 7vmax;
   margin-right: 4vmin;
   width: 6vmax;
+  z-index: 999;
   /* transition: all 0.3s ease-in; */
 }
 .hamburger .span {
@@ -65,6 +66,15 @@ nav {
   border-radius: 2px;
   height: 7px;
   margin: 5px auto;
+}
+.span-one {
+  transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+.span-two {
+  opacity: 0;
+}
+.span-three {
+  transform: rotate(-45deg) translateX(10px) translateY(-12px);
 }
 .nav-toggled {
   background: #eeeeee; /* grey lighten-3 */
