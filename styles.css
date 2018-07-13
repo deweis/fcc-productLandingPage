@@ -103,6 +103,38 @@ nav {
 main {
   padding: 1vmin;
 }
+form {
+  border-bottom: 2px solid #eeeeee; /* grey lighten-3 */
+  border-top: 2px solid #eeeeee; /* grey lighten-3 */
+  padding: 3vmin;
+  text-align: center;
+}
+.newsletter {
+  color: #616161; /* grey darken-2 */
+  display: block;
+  font-size: 1.3em;
+  padding: 6px;
+}
+input {
+  font-size: 1.1em;
+  margin: 2vmin;
+}
+.input-text {
+  border: 2px solid #bdbdbd  ; /* grey lighten-1 */
+  border-radius: 4px;
+  padding: 4px;
+}
+.input-submit {
+  background: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px 14px;
+}
+.input-submit:hover {
+  filter: brightness(85%);
+}
 @media (max-width: 650px) {
   nav .nav-links {
     display: none;
