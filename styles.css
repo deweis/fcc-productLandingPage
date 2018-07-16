@@ -14,6 +14,7 @@ header {
   border-radius: 5px;
   position: sticky; /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
   top: 0;
+  z-index: 999;
 }
 .header-img {
   width: 40%;
@@ -109,6 +110,30 @@ form {
   padding: 3vmin;
   text-align: center;
 }
+/* Thank you https://blog.theodo.fr/2018/01/responsive-iframes-css-trick/ */
+.video-container {
+  margin: 7vmin auto;
+}
+.video-container div:first-child {
+  overflow: hidden; /* to hide any elements that might be placed outside */
+  padding-top: 56.25%; /* This is where the magic is. In CSS, the padding-top
+    * property can receive a percentage, this is what keeps our iframe to the
+    * right ratio. By using percentage, it will calculate the padding to use
+    * based on the width of the element. In this case, we want to keep the
+    * ratio of 56.26% (height 9 ÷ width 16).*/
+  position: relative; /* so that we can later position our iframe in relation to the wrapping element. */
+}
+iframe {
+  border: 0;
+  display: block;
+  position: absolute; /* positions the element based on the closest non static,
+    * parent element. In this case it will give the iframe a position relative
+    * to the wrapper and let it be positioned over the padding of the wrapper. */
+  top: 0; /* used to position the iframe at the center of the container. */
+  left: 0; /* used to position the iframe at the center of the container. */
+  width: 100%; /* make the iframe take all of the wrapper’s space. */
+  height: 100%; /* make the iframe take all of the wrapper’s space. */
+}
 .newsletter {
   color: #616161; /* grey darken-2 */
   display: block;
@@ -135,6 +160,7 @@ input {
 .input-submit:hover {
   filter: brightness(85%);
 }
+
 @media (max-width: 650px) {
   nav .nav-links {
     display: none;
@@ -142,6 +168,12 @@ input {
   .hamburger {
     display: inline-block;
     /* transition: all 0.3s ease-in;     */
+  }
+}
+@media (min-width: 650px) {
+  .video-container {
+    margin: 5vmin auto;
+      width: 75%;
   }
 }
 @media (min-width: 992px) {
