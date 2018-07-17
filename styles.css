@@ -5,6 +5,10 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+/**
+ * Header Section and responsive navigation
+ */
 h1 {
   text-align: center;
   color: #424242; /* grey darken-3 */
@@ -101,20 +105,41 @@ nav {
   line-height: 25vmin;
   width: 100%;
 }
+
+/**
+ * Main section - CSS Grid
+ */
 main {
   padding: 1vmin;
+  display: grid;
+  grid-template-columns: 33% 32% 33%;
+  grid-template-rows: auto auto auto;
+  grid-gap: 1% 10px;
+}
+.item1 {
+  grid-column: 1 / 2;
+}
+.item2 {
+  grid-column: 2 / 3;
+}
+.item3 {
+  grid-column: 3 / 4;
 }
 form {
   border-bottom: 2px solid #eeeeee; /* grey lighten-3 */
   border-top: 2px solid #eeeeee; /* grey lighten-3 */
+  grid-column: 1 / 4;
   padding: 3vmin;
   text-align: center;
 }
 /* Thank you https://blog.theodo.fr/2018/01/responsive-iframes-css-trick/ */
 .video-container {
-  margin: 7vmin auto;
+  grid-column: 1 / 4;
 }
-.video-container div:first-child {
+/* .video-container div:first-child {
+  margin: 7vmin auto;
+} */
+.video-container div div:first-child {
   overflow: hidden; /* to hide any elements that might be placed outside */
   padding-top: 56.25%; /* This is where the magic is. In CSS, the padding-top
     * property can receive a percentage, this is what keeps our iframe to the
@@ -161,6 +186,9 @@ input {
   filter: brightness(85%);
 }
 
+/**
+ * Media queries
+ */
 @media (max-width: 650px) {
   nav .nav-links {
     display: none;
