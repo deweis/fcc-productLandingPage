@@ -129,7 +129,7 @@ main {
   padding: 2vw 8vw;
   /* grid-column: 1 / 4; */
 }
-.anchor {
+.anchor { /* Thanks to https://www.caktusgroup.com/blog/2017/10/23/css-tip-fixed-headers-and-section-anchors/ */
   left: 0;
   position: absolute;
   top: 35vh;
