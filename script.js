@@ -25,3 +25,11 @@ function hideOverlayMenu() {
     showOverlayMenu();
   });
 }
+
+document.getElementById('nav-toggle-about').addEventListener('click', function () {
+  hideOverlayMenu();
+});
+
+document.getElementById('nav-toggle-video').addEventListener('click', function () {
+  hideOverlayMenu();
+});
