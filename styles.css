@@ -14,7 +14,7 @@ h1 {
   color: #424242; /* grey darken-3 */
 }
 header {
-  background: #eeeeee; /* grey lighten-3 */
+  background: #ecbe13; /*#eeeeee; grey lighten-3 */
   border-radius: 5px;
   position: sticky; /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
   top: 0;
@@ -44,7 +44,7 @@ nav {
   text-align: center;
 }
 .nav-links li:hover {
-  background: #e0e0e0; /* grey lighten-2 */
+  background: #F4D14E; /*#e0e0e0; grey lighten-2 */
   border-radius: 5px;
   cursor: pointer;
 }
@@ -82,7 +82,7 @@ nav {
   transform: rotate(-45deg) translateX(10px) translateY(-12px);
 }
 .nav-toggled {
-  background: #eeeeee; /* grey lighten-3 */
+  background: #ecbe13; /* #eeeeee; grey lighten-3 */
   bottom: 0;
   display: none;
   height: 100%;
@@ -128,6 +128,11 @@ main {
   grid-area: intro;
   padding: 2vw 8vw;
   /* grid-column: 1 / 4; */
+}
+.anchor {  /* Thanks to   https://www.caktusgroup.com/blog/2017/10/23/css-tip-fixed-headers-and-section-anchors/*/
+  left: 0;
+  position: absolute;
+  top: 35vh;
 }
 .core {
   padding: 1vw 2vw;
