@@ -26,6 +26,10 @@ function hideOverlayMenu() {
   });
 }
 
+document.getElementById('nav-toggle-home').addEventListener('click', function () {
+  hideOverlayMenu();
+});
+
 document.getElementById('nav-toggle-about').addEventListener('click', function () {
   hideOverlayMenu();
 });
