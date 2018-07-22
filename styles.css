@@ -114,6 +114,7 @@ main {
   display: grid;
   grid-template-areas:
       "intro intro intro"
+      "cloud cloud cloud"
       "vision vision vision"
       "mission mission mission"
       "values values values"
@@ -137,13 +138,20 @@ main {
 .anchor { /* Thanks to https://www.caktusgroup.com/blog/2017/10/23/css-tip-fixed-headers-and-section-anchors/ */
   left: 0;
   position: absolute;
-  top: 35vh;
+  top: 55vh;
 }
 .core {
   /* border: 1px solid #ecbe13; */
   border-radius: 5px;
   box-shadow: 0 1px 10px #ecbe13;
   padding: 1em;
+}
+.word-cloud {
+  align-self: center;
+  grid-area: cloud;
+  justify-self: center;
+  padding-bottom: 1em;
+  width: 75%;
 }
 .vision {
   grid-area: vision;
@@ -240,12 +248,20 @@ input {
     padding: 1vmin;
     display: grid;
     grid-template-areas:
-        "intro intro intro"
+        "intro intro cloud"
         "vision mission values"
         "outro outro outro"
         "video video video"
         "form form form";
     }
+    .intro {
+      margin-right: 7vw;
+    }
+  .word-cloud {
+    padding-bottom: 0;
+    width: 110%;
+    margin-left: -20vw;
+  }
   .video-container {
     margin: 5vmin auto;
       width: 75%;
