@@ -135,10 +135,13 @@ main {
   grid-area: intro;
   /* grid-column: 1 / 4; */
 }
-.anchor { /* Thanks to https://www.caktusgroup.com/blog/2017/10/23/css-tip-fixed-headers-and-section-anchors/ */
+.anchor {
+  position: relative;
+}
+.anchor a { /* Thanks to https://www.caktusgroup.com/blog/2017/10/23/css-tip-fixed-headers-and-section-anchors/ */
   left: 0;
   position: absolute;
-  top: 50vh;
+  top: 52vh;
 }
 .core {
   /* border: 1px solid #ecbe13; */

@@ -17,7 +17,7 @@ function showOverlayMenu() {
 function hideOverlayMenu() {
   document.getElementById('header-claim').style.display = 'block';
   document.getElementById('nav-toggled').style.display = 'none';
-  document.getElementById('main').style.display = 'block';
+  document.getElementById('main').style.display = 'grid';
   document.getElementById('one').classList.remove('span-one');
   document.getElementById('two').classList.remove('span-two');
   document.getElementById('three').classList.remove('span-three');
