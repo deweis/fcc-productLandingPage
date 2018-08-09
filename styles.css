@@ -1,9 +1,10 @@
 /**
- * Thanks to https://codepen.io/mburakerman/pen/zrNYwZ for them
+ * Thanks to https://codepen.io/mburakerman/pen/zrNYwZ for the
  * responsive nav bar concept
  */
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 /**
@@ -12,10 +13,12 @@ body {
 h1 {
   text-align: center;
   color: #424242; /* grey darken-3 */
+  margin: 8px;
 }
 header {
   background: #ecbe13; /*#eeeeee; grey lighten-3 */
   border-radius: 5px;
+  margin: 8px;
   position: sticky; /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
   top: 0;
   z-index: 999;
@@ -126,6 +129,7 @@ main {
   /* grid-column-gap: 2%;*/
   grid-column-gap: 2%;
   grid-row-gap: 1em;
+  margin: 8px;
 }
 .quote {
   font-size: 1.4em;
@@ -135,13 +139,14 @@ main {
   grid-area: intro;
   /* grid-column: 1 / 4; */
 }
-.anchor {
+:target {
+  display: block;
   position: relative;
+  top: -18vh;
+  visibility: hidden;
 }
-.anchor a { /* Thanks to https://www.caktusgroup.com/blog/2017/10/23/css-tip-fixed-headers-and-section-anchors/ */
-  left: 0;
-  position: absolute;
-  top: 52vh;
+.home:target {
+  top: 0;
 }
 .core {
   /* border: 1px solid #ecbe13; */
@@ -184,9 +189,6 @@ form {
   grid-area: video;
   /* grid-column: 1 / 4; */
 }
-/* .video-container div:first-child {
-  margin: 7vmin auto;
-} */
 .video-container div div:first-child {
   overflow: hidden; /* to hide any elements that might be placed outside */
   padding-top: 56.25%; /* This is where the magic is. In CSS, the padding-top
@@ -237,6 +239,14 @@ input {
 /**
  * Media queries
  */
+@media (min-width: 450px) {
+   :target {
+     top: -20vh;
+   }
+   .home:target {
+     top: 0;
+   }
+}
 @media (max-width: 650px) {
   nav .nav-links {
     display: none;
@@ -257,13 +267,19 @@ input {
         "video video video"
         "form form form";
     }
+    :target {
+      top: -22vh;
+    }
+    .home:target {
+      top: 0;
+    }
     .intro {
       margin-right: 7vw;
     }
   .word-cloud {
+    margin-left: -20vw;    
     padding-bottom: 0;
     width: 110%;
-    margin-left: -20vw;
   }
   .video-container {
     margin: 5vmin auto;
