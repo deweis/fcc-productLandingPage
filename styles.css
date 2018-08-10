@@ -176,6 +176,10 @@ main {
 }
 .outro {
   grid-area: outro;
+  text-align: justify;
+}
+.outro p {
+  margin: 0;
 }
 form {
   border-bottom: 2px solid #eeeeee; /* grey lighten-3 */
