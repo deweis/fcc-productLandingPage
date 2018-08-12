@@ -124,7 +124,8 @@ main {
       "values values values"
       "outro outro outro"
       "video video video"
-      "form form form";
+      "form form form"
+      "url url url";
   grid-template-columns: 32% 32% 32%;
   /* grid-template-rows: auto auto auto auto auto auto; */
   /* grid-column-gap: 2%;*/
@@ -220,6 +221,10 @@ iframe {
   font-size: 1.3em;
   padding: 6px;
 }
+.url {
+  grid-area: url;
+  text-align: center;
+}
 input {
   font-size: 1.1em;
   margin: 2vmin;
@@ -270,7 +275,8 @@ input {
         "vision mission values"
         "outro outro outro"
         "video video video"
-        "form form form";
+        "form form form"
+        "url url url";
     }
     :target {
       top: -22vh;
