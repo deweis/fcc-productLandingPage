@@ -183,11 +183,10 @@ main {
   margin: 0;
 }
 form {
-  border-bottom: 2px solid #eeeeee; /* grey lighten-3 */
   border-top: 2px solid #eeeeee; /* grey lighten-3 */
   grid-area: form;
   /* grid-column: 1 / 4; */
-  padding: 3vmin;
+  padding-top: 3vmin;
   text-align: center;
 }
 /* Thank you https://blog.theodo.fr/2018/01/responsive-iframes-css-trick/ */
@@ -250,6 +249,7 @@ footer {
   font-size: 0.8em;
   padding: 0.7em;
   text-align: center;
+  border-top: 2px solid #eeeeee; /* grey lighten-3 */
 }
 
 /**
