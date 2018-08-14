@@ -37,3 +37,7 @@ document.getElementById('nav-toggle-about').addEventListener('click', function (
 document.getElementById('nav-toggle-video').addEventListener('click', function () {
   hideOverlayMenu();
 });
+
+function openUrl() {
+  window.open('https://wiki.opensourceecology.org/wiki/GVCS_State_of_Completion', '_blank');
+}

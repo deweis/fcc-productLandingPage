@@ -124,6 +124,11 @@ main {
       "values values values"
       "outro outro outro"
       "video video video"
+      "lego lego lego"
+      "gvcs gvcs gvcs"
+      "gvcs-def gvcs-def gvcs-def"
+      "gvcs-status gvcs-status gvcs-status"
+      "completion completion completion"
       "form form form"
       "url url url";
   grid-template-columns: 32% 32% 32%;
@@ -214,6 +219,36 @@ iframe {
   width: 100%; /* make the iframe take all of the wrapper’s space. */
   height: 100%; /* make the iframe take all of the wrapper’s space. */
 }
+.lego {
+  grid-area: lego;
+  text-align: justify;
+}
+.lego p {
+  margin: 0;
+}
+.gvcs {
+  grid-area: gvcs;
+}
+.gvcs img {
+  align-self: center;
+  justify-self: center;
+  padding-bottom: 1em;
+  width: 100%;
+}
+.gvcs-def {
+  grid-area: gvcs-def;
+}
+.gvcs-status {
+  grid-area: gvcs-status;
+  align-self: center;
+  justify-self: center;
+  padding-bottom: 1em;
+  width: 100%;
+  cursor: pointer;
+}
+.completion {
+  grid-area: completion;
+}
 .newsletter {
   color: #616161; /* grey darken-2 */
   display: block;
@@ -281,18 +316,23 @@ footer {
         "vision mission values"
         "outro outro outro"
         "video video video"
+        "lego lego lego"
+        "gvcs gvcs gvcs"
+        "gvcs-def gvcs-def gvcs-def"
+        "gvcs-status gvcs-status gvcs-status"
+        "completion completion completion"
         "form form form"
         "url url url";
-    }
-    :target {
-      top: -22vh;
-    }
-    .home:target {
-      top: 0;
-    }
-    .intro {
-      margin-right: 7vw;
-    }
+  }
+  :target {
+    top: -22vh;
+  }
+  .home:target {
+    top: 0;
+  }
+  .intro {
+    margin-right: 7vw;
+  }
   .word-cloud {
     margin-left: -20vw;
     padding-bottom: 0;
@@ -300,12 +340,36 @@ footer {
   }
   .video-container {
     margin: 5vmin auto;
-      width: 75%;
+    width: 75%;
+  }
+  .gvcs h2 {
+    width: 220%;
   }
 }
 @media (min-width: 992px) {
   body {
     margin: auto;
     width: 992px;
+  }
+  main {
+    grid-template-areas:
+        "intro intro cloud"
+        "vision mission values"
+        "outro outro outro"
+        "video video video"
+        "lego lego lego"
+        "gvcs gvcs gvcs-def"
+        "completion completion completion"
+        "gvcs-status gvcs-status gvcs-status"
+        "form form form"
+        "url url url";
+  }
+  .gvcs {
+    width: 75%;
+  }
+  .gvcs-def {
+    align-self: center;
+    margin-left: -220px;
+    width: 125%;
   }
 }
