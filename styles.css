@@ -34,16 +34,17 @@ nav {
   justify-content: space-between;
 }
 .nav-links {
-  list-style-type: none;
   align-self: flex-end;
-  width: 60%;
   display: flex;
   justify-content: space-around;
+  list-style-type: none;
   margin-bottom: 0;
+  padding-left: 0;
+  width: 70%;
 }
 .nav-links li {
   line-height: 50px;
-  width: 33.33%;
+  width: 25%;
   text-align: center;
 }
 .nav-links li:hover {
