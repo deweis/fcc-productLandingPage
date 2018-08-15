@@ -182,7 +182,7 @@ main {
 }
 .outro {
   grid-area: outro;
-  text-align: justify;
+  /* text-align: justify; */
 }
 .outro p {
   margin: 0;
@@ -221,7 +221,7 @@ iframe {
 }
 .lego {
   grid-area: lego;
-  text-align: justify;
+  /* text-align: justify; */
 }
 .lego p {
   margin: 0;
@@ -237,6 +237,10 @@ iframe {
 }
 .gvcs-def {
   grid-area: gvcs-def;
+}
+.gvcs-def p,
+.completion p {
+  margin-top: 0;
 }
 .gvcs-status {
   grid-area: gvcs-status;
@@ -339,17 +343,19 @@ footer {
     width: 110%;
   }
   .video-container {
-    margin: 5vmin auto;
-    width: 75%;
+    /* margin: 5vmin auto; */
+    /* width: 75%; */
+    width: 100%;
   }
   .gvcs h2 {
+    font-size: 28px;
     width: 220%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   body {
     margin: auto;
-    width: 992px;
+    width: 999px;
   }
   main {
     grid-template-areas:
@@ -370,6 +376,10 @@ footer {
   .gvcs-def {
     align-self: center;
     margin-left: -220px;
+    margin-top: 25px;
     width: 125%;
+  }
+  .gvcs-def p {
+    margin-bottom: 0;
   }
 }
