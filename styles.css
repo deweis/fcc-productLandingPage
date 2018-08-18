@@ -371,6 +371,16 @@ footer {
         "form form form"
         "url url url";
   }
+  .quote {
+    font-size: 1.4em;
+    padding: 2vw 100px;
+  }
+  .word-cloud {
+    margin-left: -200px;
+  }
+  .lego {
+    text-align: center;
+  }
   .gvcs {
     width: 75%;
   }
@@ -382,5 +392,36 @@ footer {
   }
   .gvcs-def p {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1680px) {
+  body {
+    margin: auto;
+    width: 70%;
+  }
+  .word-cloud {
+    margin-top: 35px;
+    margin-left: -250px;
+    margin-bottom: 35px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .intro {
+    padding: 100px 125px 0 125px;
+  }
+  .word-cloud {
+    margin-bottom: 45px;
+    margin-left: -275px;
+    margin-top: 45px;
+    width: 110%;
+  }
+  .outro {
+    padding: 50px 200px 50px 200px;
+  }
+  .completion {
+    padding: 25px 200px 25px 200px;
   }
 }
